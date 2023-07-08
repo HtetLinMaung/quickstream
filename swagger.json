@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI 3.0",
+    "description": "",
+    "version": "1.0.11"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "tags": [
+    {
+      "name": "routes",
+      "description": "Everything about your Routes"
+    }
+  ],
+  "paths": {
+    "/quickstream/:namespace/:filename": {
+      "get": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "getquickstream_:namespace_:filename"
+      },
+      "post": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "postquickstream_:namespace_:filename"
+      },
+      "put": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "putquickstream_:namespace_:filename"
+      },
+      "patch": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "patchquickstream_:namespace_:filename"
+      },
+      "delete": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "deletequickstream_:namespace_:filename"
+      }
+    }
+  }
+}

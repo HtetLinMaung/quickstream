@@ -1,0 +1,43 @@
+{
+  "name": "quickstream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && starless-server start",
+    "watch": "tsc -w",
+    "dev": "nodemon node_modules/starless-server start",
+    "build": "tsc && starless-server build --azure-functions --aws-sam-lambda",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/functions": "^3.5.1",
+    "@types/aws-lambda": "^8.10.119",
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/mime-types": "^2.1.1",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.4.0",
+    "jest": "^29.6.0",
+    "nodemon": "^2.0.22",
+    "starless-server": "^1.12.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.14.0",
+    "aws-sdk": "^2.1412.0",
+    "bcrypt": "^5.1.0",
+    "code-alchemy": "^1.4.5",
+    "jsonwebtoken": "^9.0.1",
+    "mime-types": "^2.1.35",
+    "mongoose": "^7.3.2",
+    "multer": "^1.4.5-lts.1",
+    "starless-logger": "^1.0.5"
+  }
+}
