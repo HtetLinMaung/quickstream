@@ -10,7 +10,7 @@ import saveFile from "../../../utils/save-file";
 export default brewBlankExpressFunc(async (req, res) => {
   const filename = req.headers["x-filename"] as string; // The filename could be sent in a header
   const namespace = req.headers["x-namespace"] as string; // The namespace could be sent in a header
-  const location = req.headers["x-location"] as string;
+  const location = (req.headers["x-location"] as string) || "local";
 
   const { namespacePermissions } = verifyToken(req);
   if (
