@@ -37,7 +37,7 @@ export default async function saveFile(options: SaveFileOptions): Promise<{
         blobContentType: contentType,
       },
     };
-    console.log("contentType: " + contentType);
+
     // Upload to Azure Blob Storage
     const blockBlobClient = containerClient.getBlockBlobClient(filename);
     const uploadBlobResponse = await blockBlobClient.uploadData(
